@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Space</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create Your Space</h1>
+        <p>Design your own unique space with us!</p>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Design Your Space</h2>
+            <form >
+                <label for="space-name">Space Name:</label>
+                <input type="text" id="space-name" name="space-name" required>
+
+                <label for="space-type">Type of Space:</label>
+                <select id="space-type" name="space-type">
+                    <option value="office">Office</option>
+                    <option value="home">Home</option>
+                    <option value="garden">Garden</option>
+                    <option value="studio">Studio</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <a href="new/navbar/dashboard.php"><button type="submit">Create Space</button></a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Create Space. All rights reserved.</p>
+    </footer>
+</body>
+</html>
